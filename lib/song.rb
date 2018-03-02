@@ -39,8 +39,10 @@ class Song
 
   def self.alphabetical
     self.all.sort_by { |song| song.name}
+    # @@all.sort{ |a,b| a.name <=> b.name}
   end
 
+<<<<<<< HEAD
   def self.new_from_filename(filename)
     song = self.new
     split_filename = filename.chomp(".mp3").split(" - ")
@@ -62,6 +64,8 @@ end
     self.all.clear
   end
 
+=======
+>>>>>>> ba01e6cb527852bc84e7208ab875a08fcc23d361
   def self.all
     @@all
   end
